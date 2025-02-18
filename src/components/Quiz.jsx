@@ -150,15 +150,21 @@ const Quiz = () => {
   }
 
   return (
-    <div className="quiz-container">
-        <div className='ques-timer'>
-      <Question
-        questionData={currentQuestion}
-        onAnswerSelect={handleAnswer}
-        disabled={!!feedback}
-        feedback={feedback}
-      />
-      <Timer initialTime={30} onTimeUp={handleTimeUp} resetTrigger={currentQuestionIndex} />
+   <div className="quiz-container">
+      <div className="ques-timer">
+        <Question
+          questionData={currentQuestion}
+          onAnswerSelect={handleAnswer}
+          disabled={!!feedback}
+          feedback={feedback}
+        />
+        {/* Add key prop to Timer to force remount on question change */}
+        <Timer
+          key={currentQuestionIndex}
+          initialTime={30}
+          onTimeUp={handleTimeUp}
+          resetTrigger={currentQuestionIndex}
+        />
       </div>
       <div className="attempt-info">
         Question {currentQuestionIndex + 1} of {sampleQuestions.length}
