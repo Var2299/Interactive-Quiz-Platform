@@ -33,6 +33,7 @@ This project was built to meet a comprehensive assignment challenge. It features
 ### Deployment Ready
 - Fully deployed on Vercel with a mobile-friendly design.
 
+### Desktop Version
 ---
 ![image](https://github.com/user-attachments/assets/cfa0924f-ad7a-4ef4-98ae-a54061771008)
 ![image](https://github.com/user-attachments/assets/0d46dd74-e164-4925-abd5-f0743ea0d467)
@@ -40,6 +41,16 @@ This project was built to meet a comprehensive assignment challenge. It features
 ![image](https://github.com/user-attachments/assets/64a5a984-bc2a-4716-90d4-073c42d5bb38)
 
 ---
+
+### Mobile Version
+---
+![image](https://github.com/user-attachments/assets/162c56b2-6e4b-45a0-a20a-5cda0de5260b)
+![image](https://github.com/user-attachments/assets/deba09da-4c32-4249-8b85-7315a48c3bbe)
+![image](https://github.com/user-attachments/assets/479d4f02-958d-4f7e-a92b-466265a097d9)
+![image](https://github.com/user-attachments/assets/262fe3e3-58cd-48cd-b8fa-2c743ff2cfd5)
+
+---
+
 ## Getting Started
 
 ### Prerequisites
