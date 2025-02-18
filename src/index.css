@@ -1,0 +1,337 @@
+/* src/index.css */
+
+
+.history {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  color: #eceff1;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.history h3 {
+  color: #9c27b0; /* Purple heading */
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.history ul {
+  list-style: none;
+  padding: 0;
+}
+
+.history li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.history p {
+  color: #f5f5f5;
+  font-size: 1.1rem;
+}
+
+/* Placeholder color for input fields */
+input::placeholder {
+  color: #9c27b0; /* Purple color for the placeholder */
+}
+
+/* When input is focused or hovered */
+input:hover,
+input:focus {
+  cursor: text; /* Keeps the text cursor while hovering or focused */
+  caret-color: white; /* Changes the color of the cursor (text input caret) to white */
+}
+
+
+.start-quiz-button {
+  background: var(--primary-color);
+  border: none;
+  border-radius: var(--border-radius);
+  color: #fff;
+  padding: 16px 28px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background var(--transition-speed), transform var(--transition-speed);
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  margin-top: 30px;
+}
+input::placeholder {
+  color: #ffffff; /* Purple color for the placeholder */
+}
+.start-quiz-button:hover {
+  background: var(--secondary-color);
+  transform: translateY(-3px);
+}
+
+.start-quiz-button:focus {
+  outline: none;
+}
+
+/* Define theme variables */
+:root {
+  --primary-color: #ff8c00;      /* Vibrant orange */
+  --secondary-color: #ff6347;    /* Tomato red */
+  --accent-color: #00bcd4;       /* Cyan for accents */
+  --background-gradient: linear-gradient(135deg, #6a1b9a, #ff4081); /* Deep purple to pink gradient */
+  --card-bg: rgba(255, 255, 255, 0.15); /* Slightly more transparent */
+  --text-color: #eceff1;          /* Lighter text color */
+  --border-radius: 12px;          /* Softer rounded corners */
+  --transition-speed: 0.3s;       /* Smooth transitions */
+  --box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Deeper shadow for added depth */
+  --header-text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* Added shadow for the heading */
+}
+
+/* Global reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body with a vibrant gradient background */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: var(--background-gradient);
+  color: var(--text-color);
+  padding: 40px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;  /* Center content vertically */
+}
+
+/* Header Styling */
+.AppWrapper h1 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 40px;  /* Space between header and content */
+  font-weight: 700;
+  text-shadow: var(--header-text-shadow); /* Enhanced shadow */
+  letter-spacing: 2px;
+  animation: fadeInHeader 1.5s ease-in-out;  /* Fade-in animation */
+}
+
+/* Main App container styling */
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--card-bg);
+  padding: 40px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  backdrop-filter: blur(10px);
+  animation: fadeInApp 1s ease-out;
+}
+
+/* Container spacing */
+.quiz-container,
+.scoreboard,
+.history,
+.question,
+.timer {
+  margin-bottom: 30px;
+}
+.ques-timer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;  /* Vertically center the items (question and timer) */
+  justify-content: space-between;  /* Distribute space between the question and the timer */
+}
+
+.question {
+  flex-grow: 1;  /* Makes the question take up available space */
+}
+
+.timer {
+  margin-left: 20px; /* Add some space between question and timer */
+}
+
+/* Buttons styling */
+button {
+  background: var(--primary-color);
+  border: none;
+  border-radius: var(--border-radius);
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1rem;
+  transition: background var(--transition-speed), transform var(--transition-speed);
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--secondary-color);
+  transform: translateY(-3px);
+}
+
+/* Input fields styling */
+input[type="text"] {
+  padding: 12px;
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  margin-right: 10px;
+  width: calc(100% - 140px);
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+  outline: none;
+  transition: border var(--transition-speed);
+}
+
+input[type="text"]:focus {
+  border-color: var(--secondary-color);
+}
+
+/* Feedback message styling with animation */
+.feedback {
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Attempt info styling */
+.attempt-info {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* List styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Question title styling */
+.question h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: var(--accent-color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Timer styling */
+.timer {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-top: 10px;
+}
+
+/* Timer wrapper - centers the clock timer */
+.timer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Adjust the positioning and design of the clock */
+.clock-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Styling the clock face */
+.clock-face {
+  stroke: #ffffff;
+  stroke-width: 4;
+}
+
+.tick {
+  stroke: #ffffff;
+  stroke-width: 2;
+}
+
+.clock-hand {
+  stroke: var(--primary-color);
+  stroke-linecap: round;
+  stroke-width: 4;
+  filter: drop-shadow(0 0 6px var(--primary-color));
+  transition: all 0.5s linear;
+}
+
+/* Timer progress (circle) smooth transition */
+.timer-progress {
+  transition: stroke-dashoffset 1s linear;
+}
+
+/* Timer text */
+.timer-text {
+  fill: var(--text-color);
+  font-size: 1.8rem;
+  font-weight: bold;
+  transform: rotate(90deg);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Scoreboard styling */
+.scoreboard h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 40px;  /* Space between header and content */
+  font-weight: 700;
+  text-shadow: var(--header-text-shadow); /* Enhanced shadow */
+  letter-spacing: 2px;
+}
+
+/* App fade-in animation */
+@keyframes fadeInApp {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Header fade-in animation */
+@keyframes fadeInHeader {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Feedback fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
