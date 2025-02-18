@@ -41,7 +41,6 @@ This project was built to meet a comprehensive assignment challenge. It features
 ![image](https://github.com/user-attachments/assets/64a5a984-bc2a-4716-90d4-073c42d5bb38)
 
 ---
-
 ### Mobile Version
 ---
 ![image](https://github.com/user-attachments/assets/162c56b2-6e4b-45a0-a20a-5cda0de5260b)
