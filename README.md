@@ -71,7 +71,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed.
 #### Open your browser and navigate to http://localhost:3000 to start quizzing! 🚀
 
 ### Live Demo
-#### Check out the live app here: [Live Demo](https://nodejs.org/) 🌐
+#### Check out the live app here: [Live Demo](https://interactive-quiz-platform-seven.vercel.app/) 🌐
 
 ## Code Quality & Structure
 
