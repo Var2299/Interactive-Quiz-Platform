@@ -36,9 +36,9 @@ This project was built to meet a comprehensive assignment challenge. It features
 ### Desktop Version
 ---
 ![image](https://github.com/user-attachments/assets/9689877e-2ca9-4093-ad87-8829abc01c29)
-![image](https://github.com/user-attachments/assets/0d46dd74-e164-4925-abd5-f0743ea0d467)
-![image](https://github.com/user-attachments/assets/a20d7084-83da-41ec-8fb1-d5998e3d5c7d)
-![image](https://github.com/user-attachments/assets/64a5a984-bc2a-4716-90d4-073c42d5bb38)
+![image](https://github.com/user-attachments/assets/83a2d218-d104-43a1-a298-e7012bb67a45)
+![image](https://github.com/user-attachments/assets/83a0f8ad-6f33-40c5-aa96-5521f94f0bc9)
+![image](https://github.com/user-attachments/assets/d3c640b0-a0f2-412b-882f-2324edc69a68)
 
 ---
 ### Mobile Version
